@@ -15,7 +15,7 @@ python3Packages.buildPythonPackage rec {
     owner = "Yubico";
     repo = "yubikey-manager";
     rev = version;
-    sha256 = "1d1kz0701k451jabrsch2acbghfhqnw4wwyymqby8k6zcqm3lkiq";
+    hash = "sha256-MwM/b1QP6pkyBjz/r6oC4sW1mKC0CKMay45a0wCktk0=";
   };
 
   postPatch = ''
