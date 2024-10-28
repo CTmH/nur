@@ -17,6 +17,7 @@
   example-package = pkgs.callPackage ./pkgs/example-package { };
   super-productivity = pkgs.callPackage ./pkgs/super-productivity { };
   yubikey-manager = pkgs.callPackage ./pkgs/yubikey-manager { };
+  #yubikey-manager-qt = pkgs.callPackage ./pkgs/yubikey-manager-qt { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
