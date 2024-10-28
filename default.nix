@@ -14,7 +14,6 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
   super-productivity = pkgs.callPackage ./pkgs/super-productivity { };
   yubikey-manager = pkgs.callPackage ./pkgs/yubikey-manager { };
   #yubikey-manager-qt = pkgs.callPackage ./pkgs/yubikey-manager-qt { };
