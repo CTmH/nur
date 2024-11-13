@@ -2,11 +2,11 @@
 
 stdenv.mkDerivation rec {
   pname = "super-productivity";
-  version = "10.0.11";
+  version = "10.1.1";
 
   src = fetchurl {
     url = "https://github.com/johannesjo/super-productivity/releases/download/v${version}/superProductivity-${version}.AppImage";
-    sha256 = "1w8lrzxai7qp1v6rjx8dbixiz3xyiwv5cpj41js5cmpzlg7dz0di";
+    sha256 = "1w04zknv6sjbmjwbsw08mn2zsi4cbc9hay76d68wflbrw3fch9ip";
     name = "${pname}-${version}.AppImage";
   };
 
