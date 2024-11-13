@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "10.1.1";
 
   src = fetchurl {
-    url = "https://github.com/johannesjo/super-productivity/releases/download/v${version}/superProductivity-${version}.AppImage";
+    url = "https://github.com/johannesjo/super-productivity/releases/download/v${version}/superProductivity-x86_64.AppImage";
     sha256 = "1w04zknv6sjbmjwbsw08mn2zsi4cbc9hay76d68wflbrw3fch9ip";
     name = "${pname}-${version}.AppImage";
   };
