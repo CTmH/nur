@@ -1,4 +1,4 @@
-{ stdenv , lib , fetchurl , appimageTools , makeWrapper , electron }:
+{ stdenv , lib , fetchurl , appimageTools , makeWrapper , electron , nur-maintainers }:
 
 stdenv.mkDerivation rec {
   pname = "super-productivity";
@@ -45,7 +45,7 @@ stdenv.mkDerivation rec {
     homepage = "https://super-productivity.com";
     license = licenses.mit;
     platforms = [ "x86_64-linux" ];
-    maintainers = with maintainers; [ ctmh ];
+    maintainers = [ nur-maintainers.ctmh ];
     mainProgram = "super-productivity";
   };
 }

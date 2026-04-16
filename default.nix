@@ -8,13 +8,16 @@
 
 { pkgs ? import <nixpkgs> { } }:
 
+let
+  nur-maintainers = import ./nur-maintainers.nix;
+in
 {
   # The `lib`, `modules`, and `overlays` names are special
   lib = import ./lib { inherit pkgs; }; # functions
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  super-productivity = pkgs.callPackage ./pkgs/super-productivity { };
+  super-productivity = pkgs.callPackage ./pkgs/super-productivity { inherit nur-maintainers; };
   #yubikey-manager = pkgs.callPackage ./pkgs/yubikey-manager { };
   #yubikey-manager-qt = pkgs.callPackage ./pkgs/yubikey-manager-qt { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
